@@ -1,1 +1,9 @@
+##  Project Summary
 
+This repository contains the report *"Dictionary Learning via Sparse Bayesian Learning (DL-SBL) for Image Denoising"*.
+
+- Implements DL-SBL for adaptive dictionary learning
+- Uses Orthogonal Matching Pursuit (OMP) for reconstruction
+- Achieves strong denoising performance (PSNR ~28–29 dB, SSIM ~0.80–0.85)
+- Preserves structural details such as edges
+- Future work: runtime optimization, color image extension, larger dataset.
