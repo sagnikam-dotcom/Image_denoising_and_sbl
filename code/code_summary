@@ -1,1 +1,20 @@
+## 🔑 Code Summary
+
+This project implements **Dictionary Learning via Sparse Bayesian Learning (DL-SBL)** for image denoising.
+
+- **Framework**: Bayesian sparse coding + alternating minimization
+- **Dictionary Learning**: Adaptive atoms learned via DL-SBL
+- **Sparse Coding**: Orthogonal Matching Pursuit (OMP) for reconstruction
+- **Pipeline**:
+  1. Convert image to grayscale
+  2. Add Gaussian noise
+  3. Extract 8×8 patches
+  4. Learn dictionary (DL-SBL)
+  5. Compute sparse codes (OMP)
+  6. Reconstruct patches
+  7. Aggregate into final image
+- **Evaluation Metrics**: PSNR, SSIM, Relative Distortion (RD), Dictionary Recovery Score (DRSR)
+- **Results**: PSNR ~28–29 dB, SSIM ~0.80–0.85; strong noise reduction with edge preservation
+- **Future Work**: Compare with K-SVD/MOD, optimize runtime, extend to color images, larger datasets
+
 
