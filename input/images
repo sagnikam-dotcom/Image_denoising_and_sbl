@@ -1,1 +1,12 @@
+## Input Description
 
+- Image Type: Grayscale image
+- Noise Model: Gaussian noise with σ = 20
+- Patch Extraction: 8 × 8 overlapping patches
+- Formulation:
+  Each noisy patch `yk` is modeled as  
+  `yk = A xk + wk`  
+  where:
+  - `A` → dictionary (atoms to be learned)
+  - `xk` → sparse representation
+  - `wk` → Gaussian noise
